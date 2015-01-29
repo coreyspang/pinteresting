@@ -25,6 +25,8 @@ gem 'bootstrap-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
+
+gem 'paperclip', github: 'thoughtbot/paperclip'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
