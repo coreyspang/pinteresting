@@ -29,9 +29,10 @@ gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'aws-sdk', '~> 1.61'
 
 
 group :development, :test do

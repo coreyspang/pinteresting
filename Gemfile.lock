@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/plataformatec/devise.git
-  revision: 6dd444458258c27ad08f56151e74fe9998713818
+  revision: 394d69d9584fea1d9cceb3930be833cbc4425f4c
   specs:
     devise (3.4.1)
       bcrypt (~> 3.0)
@@ -59,10 +59,15 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
-    autoprefixer-rails (5.0.0.3)
+    autoprefixer-rails (5.1.0)
       execjs
       json
-    bcrypt (3.1.9)
+    aws-sdk (1.61.0)
+      aws-sdk-v1 (= 1.61.0)
+    aws-sdk-v1 (1.61.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
+    bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.3)
@@ -83,7 +88,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.8.0)
+    coffee-script-source (1.9.0)
     columnize (0.9.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
@@ -138,7 +143,7 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_serve_static_assets (0.0.3)
+    rails_serve_static_assets (0.0.4)
     rails_stdout_logging (0.0.3)
     railties (4.2.0)
       actionpack (= 4.2.0)
@@ -147,8 +152,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
-    responders (2.0.2)
-      railties (>= 4.2.0.alpha, < 5)
+    responders (2.1.0)
+      railties (>= 4.2.0, < 5)
     sass (3.4.10)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -193,6 +198,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk (~> 1.61)
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
