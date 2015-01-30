@@ -35,6 +35,8 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'aws-sdk', '~> 1.61'
 gem 'masonry-rails'
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
 
 
 group :development, :test do
